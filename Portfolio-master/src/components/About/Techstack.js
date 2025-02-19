@@ -9,6 +9,7 @@ import {
   DiPython,
   DiGit,
   DiJava,
+  DiDotnet,
 } from "react-icons/di";
 import {
   SiRedis,
@@ -47,7 +48,7 @@ function Techstack() {
         <DiJava />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <Di.NET/>
+        <DiDotnet/>
       </Col>
     </Row>
   );
