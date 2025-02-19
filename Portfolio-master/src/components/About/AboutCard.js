@@ -12,6 +12,12 @@ function AboutCard() {
            
             <br />
             I am currently pursuing my Masters in Computer Science at SUNY-Binghamton University.
+            🔹 Software Development: Skilled in C, Python, Java, JavaScript, and SQL, with hands-on experience in full-stack development using Node.js, Express.js, Java Spring Boot, and more.
+            🔹 UX/UI Design: Adept at designing intuitive and engaging digital experiences using Figma, Android Studio, and modern design principles.
+            🔹 AI & Machine Learning: Experience in natural language processing (NLP) and predictive analytics, including an AI-powered educational chatbot that facilitates personalized learning.
+            🔹 Cloud & DevOps: Familiar with Google Cloud, AWS, and serverless computing, ensuring efficient deployment and scalability.
+            🔹 Web & Mobile Development: Built applications integrating RFID tracking, real-time data analysis, and API integrations, including a flight availability app using Skyscanner API.
+
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
