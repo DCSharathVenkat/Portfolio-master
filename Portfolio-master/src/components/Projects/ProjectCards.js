@@ -1,37 +1,29 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
-import { BsGithub } from "react-icons/bs";
+import { Card, Button } from "react-bootstrap";
 
-function ProjectCards(props) {
+function ProjectCard({ imgPath, title, description, ghLink, demoLink, downloadLink }) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      <Card.Img variant="top" src={imgPath} alt={title} />
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
-        </Card.Text>
-
-        {"\n"}
-        {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
-        )}
+        <Card.Title>{title}</Card.Title>
+        <Card.Text style={{ textAlign: "justify" }}>{description}</Card.Text>
+        <div className="button-container">
+          
+          {demoLink && (
+            <Button variant="secondary" href={demoLink} target="_blank" rel="noopener noreferrer" style={{ marginLeft: "10px" }}>
+              Demo
+            </Button>
+          )}
+          {downloadLink && (
+            <Button variant="success" href={downloadLink} target="_blank" rel="noopener noreferrer" style={{ marginLeft: "10px" }}>
+              Download Dashboard
+            </Button>
+          )}
+        </div>
       </Card.Body>
     </Card>
   );
 }
-export default ProjectCards;
+
+export default ProjectCard;
