@@ -64,12 +64,11 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={editor}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="ShopSmart"
+              description="Custom WordPress theme to streamline the grocery shopping experience, making it more intuitive and efficient for users. To enhance customer engagement, I integrated the WhatsApp Business API, allowing seamless communication, order tracking, and real-time updates. Additionally, I implemented referral and cashback plugins, encouraging user retention and incentivizing purchases through rewards, ultimately boosting customer loyalty and engagement. This solution not only optimized the shopping process but also created a more interactive and rewarding experience for users."
+              
             />
           </Col>
 
