@@ -34,7 +34,7 @@ function Projects() {
             <ProjectCard
               imgPath={powerBI}
               isBlog={false}
-              title="HR Analytics Dashboard"
+              title="HR ANALYTICS DASHBOARD"
               description="This HR Analytics Dashboard provides key insights into employee attrition, workforce trends, and HR performance metrics. It helps HR teams and management track attrition rates, salary distribution, job roles, and employee tenure to make informed decisions. With interactive visualizations and data-driven insights, the dashboard identifies high-risk areas for attrition, enabling proactive strategies to improve employee engagement and retention."
               downloadLink="https://drive.google.com/file/d/1FcoRcLD9pyDUo7JGklIje6vXrLm3dzFv/view?usp=sharing"
             />
@@ -44,7 +44,7 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Flight-aware VMware"
+              title="FLIGHT-AWARE VMWARE"
               description="This application is a flight search application where I used the Skyscanner API. It allows users to check real-time flight availability and compare ticket prices across multiple airlines. The application fetches flight details from Skyscanner’s API, including departure and arrival times, ticket prices, and airline options, ensuring accurate and up-to-date information. Additionally, I implemented features for filtering results based on budget, airline preferences, and layover durations."
             />
           </Col>
@@ -62,7 +62,7 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Seamless Entry and Exit Tracking for College Buses with RFID "
+              title="SEAMLESS ENTRY AND EXIT TRACKING FOR COLLEGE BUSES USING RFID "
               description="This app is an IoT-based solution designed for real-time tracking of bus entries and exits using RFID technology. The system is equipped with RFID scanners installed on buses that automatically record bus' entry and exit times, along with the corresponding bus identification numbers. By leveraging real-time data processing, the app ensures accurate monitoring, enhancing security and providing with a reliable bus tracking system. This solution helps improve transportation management, streamline record-keeping, and offer real-time insights."
             />
           </Col>
@@ -71,7 +71,7 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="ShopSmart"
+              title="SHOPSMART"
               description="Custom WordPress theme to streamline the grocery shopping experience, making it more intuitive and efficient for users. To enhance customer engagement, I integrated the WhatsApp Business API, allowing seamless communication, order tracking, and real-time updates. Additionally, I implemented referral and cashback plugins, encouraging user retention and incentivizing purchases through rewards, ultimately boosting customer loyalty and engagement. This solution not only optimized the shopping process but also created a more interactive and rewarding experience for users."
             />
           </Col>
