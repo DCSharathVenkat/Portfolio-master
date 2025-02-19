@@ -8,10 +8,11 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">D.C.Sharath Venkat. </span>
-           
+            Hi Everyone, I am <span className="purple">D.C.Sharath Venkat. </span>           
             <br />
             I am currently pursuing my Masters in Computer Science at SUNY-Binghamton University.
+            I am a passionate and enthusiastic individual with a strong desire to learn and grow.
+            I am always eager to take on new challenges and explore new opportunities.
             <br />
             <br />
 
