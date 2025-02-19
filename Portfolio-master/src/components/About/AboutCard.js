@@ -17,14 +17,17 @@ function AboutCard() {
 
             🔹 Software Development: Skilled in C, Python, Java, JavaScript, Dotnet and SQL, with hands-on experience in full-stack development using Node.js, Express.js, Java Spring Boot, and more.
             <br />
+            <br />
             🔹 UX/UI Design: Adept at designing intuitive and engaging digital experiences using Figma, Android Studio, and modern design principles.
+            <br />
             <br />
             🔹 AI & Machine Learning: Experience in natural language processing (NLP) and predictive analytics, including an AI-powered educational chatbot that facilitates personalized learning.
             <br />
+            <br />
             🔹 Cloud & DevOps: Familiar with Google Cloud, AWS, and serverless computing, ensuring efficient deployment and scalability.
             <br />
+            <br />
             🔹 Web & Mobile Development: Built applications integrating RFID tracking, real-time data analysis, and API integrations, including a flight availability app using Skyscanner API.
-
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
