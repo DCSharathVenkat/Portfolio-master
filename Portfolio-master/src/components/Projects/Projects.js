@@ -6,6 +6,8 @@ import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 import powerBI from "../../Assets/Projects/powerBI.png";
+import pbisales from "../../Assets/Projects/pbisales.png";
+
 
 function Projects() {
   return (
@@ -37,6 +39,16 @@ function Projects() {
               title="HR ANALYTICS DASHBOARD"
               description="This HR Analytics Dashboard provides key insights into employee attrition, workforce trends, and HR performance metrics. It helps HR teams and management track attrition rates, salary distribution, job roles, and employee tenure to make informed decisions. With interactive visualizations and data-driven insights, the dashboard identifies high-risk areas for attrition, enabling proactive strategies to improve employee engagement and retention."
               downloadLink="https://drive.google.com/file/d/1FcoRcLD9pyDUo7JGklIje6vXrLm3dzFv/view?usp=sharing"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={pbisales}
+              isBlog={false}
+              title="SALES ANALYTICS DASHBOARD"
+              description="The Store Sales Dashboard provides a comprehensive overview of sales performance, profit distribution, and key business metrics. It features interactive visualizations and incorporates geographic insights with a sales and profit distribution map, sales analysis by ship mode, and sub-category performance. This Power BI dashboard enables businesses to identify trends, optimize sales strategies, and enhance decision-making for better profitability and efficiency."
+              downloadLink="https://drive.google.com/file/d/1zwme3sxIYWAIs66IdEVXFHd0SljbM62a/view?usp=sharing"
             />
           </Col>
 
