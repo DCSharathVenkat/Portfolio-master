@@ -35,16 +35,16 @@ function AboutCard() {
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> 🎮 Playing Games
+              <ImPointRight /> 📱 Exploring New Tech
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> 🖌 Designing & UI/UX
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> 🌐 Browsing Tech Trends
             </li>
             <li className="about-activity">
               <ImPointRight /> 🏏 Playing Cricket
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> ✈️ Travelling
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> 🎨 Drawing
             </li>
           </ul>
         </blockquote>
