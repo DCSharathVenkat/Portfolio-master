@@ -63,6 +63,15 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={bitsOfCode}
+              isBlog={false}
+              title="STUDENT MANAGEMENT SYSTEM"
+              description="The console-based Student Management System is a .NET and C# application designed to manage student records, including creating, updating, and deleting student information. It enables course assignments, marks entry, GPA calculation, and viewing available courses and departments. The system interacts with a SQL Server database using C# and .NET, ensuring secure data handling with error management. Key features include student search, enrollment updates, and GPA calculation. This system serves as a fundamental tool for educational institutions, with potential enhancements like improved UI, grade reporting, and data analytics."
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={editor}
               isBlog={false}
               title="Sales Insight"
@@ -87,6 +96,8 @@ function Projects() {
               description="Custom WordPress theme to streamline the grocery shopping experience, making it more intuitive and efficient for users. To enhance customer engagement, I integrated the WhatsApp Business API, allowing seamless communication, order tracking, and real-time updates. Additionally, I implemented referral and cashback plugins, encouraging user retention and incentivizing purchases through rewards, ultimately boosting customer loyalty and engagement. This solution not only optimized the shopping process but also created a more interactive and rewarding experience for users."
             />
           </Col>
+
+
 
         </Row>
       </Container>
