@@ -21,16 +21,15 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+        <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={bitsOfCode}
               isBlog={false}
-              title="EDUBOT"
-              description="I led the development of an AI-powered virtual assistant focused on delivering personalized learning experiences.
-              By utilizing natural language processing (NLP) and machine learning, the assistant engages learners in real-time, answering queries, offering explanations, providing feedback, and facilitating interactive discussions."
-              ghLink="https://github.com/DCSharathVenkat/AIEduBot"
+              title="STUDENT MANAGEMENT SYSTEM"
+              description="The console-based Student Management System is a .NET and C# application designed to manage student records, including creating, updating, and deleting student information. It enables course assignments, marks entry, GPA calculation, and viewing available courses and departments. The system interacts with a SQL Server database using C# and .NET, ensuring secure data handling with error management. Key features include student search, enrollment updates, and GPA calculation. This system serves as a fundamental tool for educational institutions, with potential enhancements like improved UI, grade reporting, and data analytics."
             />
           </Col>
+
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -51,6 +50,16 @@ function Projects() {
               downloadLink="https://drive.google.com/file/d/1zwme3sxIYWAIs66IdEVXFHd0SljbM62a/view?usp=sharing"
             />
           </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatify}
+              isBlog={false}
+              title="EDUBOT"
+              description="I led the development of an AI-powered virtual assistant focused on delivering personalized learning experiences.
+              By utilizing natural language processing (NLP) and machine learning, the assistant engages learners in real-time, answering queries, offering explanations, providing feedback, and facilitating interactive discussions."
+              ghLink="https://github.com/DCSharathVenkat/AIEduBot"
+            />
+          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -61,14 +70,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="STUDENT MANAGEMENT SYSTEM"
-              description="The console-based Student Management System is a .NET and C# application designed to manage student records, including creating, updating, and deleting student information. It enables course assignments, marks entry, GPA calculation, and viewing available courses and departments. The system interacts with a SQL Server database using C# and .NET, ensuring secure data handling with error management. Key features include student search, enrollment updates, and GPA calculation. This system serves as a fundamental tool for educational institutions, with potential enhancements like improved UI, grade reporting, and data analytics."
-            />
-          </Col>
+
 
           <Col md={4} className="project-card">
             <ProjectCard
