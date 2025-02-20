@@ -2,8 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
+  AiFillPhone,
+  AiOutlineMail,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -42,6 +43,7 @@ function Footer() {
                 <FaLinkedinIn />
               </a>
             </li>
+
             <li className="social-icons">
               <a
                 href="https://www.instagram.com/sharath_venkat/?hl=en"
@@ -52,6 +54,26 @@ function Footer() {
                 <AiFillInstagram />
               </a>
             </li>
+            <li className="social-icons">
+              <a
+                href="mailto:sharathvenkat.dc@gmail.com"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <AiOutlineMail />
+              </a>
+            </li>
+
+            <li className="social-icons">
+              <a
+                href="tel:+14105646024"
+                style={{ color: "white", display: "flex", alignItems: "center", gap: "5px" }}
+              >
+                <AiFillPhone /> +1 (410) 564-6024
+              </a>
+            </li>
+
           </ul>
         </Col>
       </Row>
