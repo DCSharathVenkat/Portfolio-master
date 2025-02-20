@@ -4,6 +4,10 @@ import {
   SiVisualstudiocode,
   SiPostman,
   SiPowerbi,
+  SiFigma,
+  SiAndroidstudio,
+  SiWordpress,
+  SiVisualstudio,
 } from "react-icons/si";
 
 function Toolstack() {
@@ -18,6 +22,18 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPowerbi />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiFigma />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAndroidstudio />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiWordpress />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiVisualstudio />
       </Col>
     </Row>
   );
