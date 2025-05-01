@@ -11,6 +11,8 @@ import {
   DiDotnet,
   DiLinux,
   DiMysql,
+  DiMongodb,
+  DiPhotoshop
   
 } from "react-icons/di";
 
@@ -51,6 +53,9 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiMysql/>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiMongodb/>
       </Col>
     </Row>
   );
