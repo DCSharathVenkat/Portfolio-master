@@ -31,6 +31,16 @@ function Projects() {
               techStack="Python, LangChain, LangGraph, LangChain Tools, OpenAI, Dotenv, Command-Line Interface"
             />  
           </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bitsOfCode}
+              title="AI RESUME ANALYZER"
+              description="This project is an AI-powered Resume Analyzer built using Streamlit and OpenAI's GPT models. It allows users to upload their resumes in PDF or text format and receive personalized, structured feedback on content clarity, skills, experience, and alignment with targeted job roles. By leveraging natural language processing, the app provides actionable insights to help users improve their resumes and boost their chances in the job market."
+              techStack="Python, Streamlit, OpenAI, PyPDF, dotenv"
+            />
+          </Col>  
+
         <Col md={4} className="project-card">
             <ProjectCard
               imgPath={bitsOfCode}
