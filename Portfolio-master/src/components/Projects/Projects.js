@@ -8,6 +8,7 @@ import bitsOfCode from "../../Assets/Projects/blog.png";
 import powerBI from "../../Assets/Projects/powerBI.png";
 import pbisales from "../../Assets/Projects/pbisales.png";
 import AIAGENT from "../../Assets/Projects/AIAGENT.png";
+import AIRESUMEANALYZER from "../../Assets/Projects/AIRESUMEANALYZER.png";
 
 function Projects() {
   return (
@@ -34,7 +35,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={AIRESUMEANALYZER}
               title="AI RESUME ANALYZER"
               description="This project is an AI-powered Resume Analyzer built using Streamlit and OpenAI's GPT models. It allows users to upload their resumes in PDF or text format and receive personalized, structured feedback on content clarity, skills, experience, and alignment with targeted job roles. By leveraging natural language processing, the app provides actionable insights to help users improve their resumes and boost their chances in the job market."
               techStack="Python, Streamlit, OpenAI, PyPDF, dotenv"

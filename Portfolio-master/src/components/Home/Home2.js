@@ -19,11 +19,11 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-            I bring a robust programming skillset and expertise in software development, UX/UI design, web development, AI, and cloud computing. 
+            I bring a robust programming skillset and expertise in software development, UX/UI design, web development, AI and cloud computing. 
               <br />
               <br />I am fluent in languages like
               <i>
-                <b className="purple"> Python, C, Javascript, Java, .NET </b>
+                <b className="purple"> Python, C, C++, Javascript, Java, .NET </b>
               </i>
               <br />
               <br />
