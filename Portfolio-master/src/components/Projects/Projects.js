@@ -7,7 +7,7 @@ import chatify from "../../Assets/Projects/chatify.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 import powerBI from "../../Assets/Projects/powerBI.png";
 import pbisales from "../../Assets/Projects/pbisales.png";
-
+import AIAGENT from "../../Assets/Projects/AIAGENT.png";
 
 function Projects() {
   return (
@@ -21,6 +21,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={AIAGENT}
+              isBlog={false}
+              title="AI ASSISTANT"
+              description=" This project is an interactive AI assistant built using LangChain and OpenAI's language model. It supports natural language conversations and users can interact with the assistant in real time through a command-line interface, making it a simple yet powerful demonstration of integrating tools with a language model to create useful, agent-like applications."
+              techStack="Python, LangChain, LangGraph, LangChain Tools, OpenAI, Dotenv, Command-Line Interface"
+            />  
+          </Col>
         <Col md={4} className="project-card">
             <ProjectCard
               imgPath={bitsOfCode}
