@@ -23,6 +23,17 @@ function Projects() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
+
+           <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={AIAGENT}
+              isBlog={false}
+              title="AI IMAGE-CLASSIFIER"
+              description=" This project is an AI-powered image classification web app using Streamlit and TensorFlow’s MobileNetV2 model pre-trained on ImageNet. The application allows users to upload images and instantly receive the top three predicted object categories along with confidence scores. It includes image preprocessing with OpenCV and NumPy, efficient model caching for performance, and a responsive UI for seamless user interaction."
+              techStack="Python, Streamlit, TensorFlow, Keras, OpenCV, NumPy, Python Imaging Library, MobileNetV2"
+            />  
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={AIAGENT}
