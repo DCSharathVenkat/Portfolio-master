@@ -55,6 +55,7 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb/>
       </Col>
+
       
       <Col xs={4} md={2} className="tech-icons">
       <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24"><path fill="currentColor" d="M2 2h20L12 12l10 10H2Z"/></svg>
