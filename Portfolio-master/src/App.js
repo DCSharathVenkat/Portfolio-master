@@ -6,6 +6,8 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
+import ChatWidget from "./components/ChatWidget"; // ⬅️ add this
+
 import {
   BrowserRouter as Router,
   Route,
@@ -24,7 +26,6 @@ function App() {
     const timer = setTimeout(() => {
       upadateLoad(false);
     }, 1200);
-
     return () => clearTimeout(timer);
   }, []);
 
@@ -39,8 +40,12 @@ function App() {
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
+
+        {/* Chat widget appears on all routes */}
+        <ChatWidget />
+
         <Footer />
       </div>
     </Router>
