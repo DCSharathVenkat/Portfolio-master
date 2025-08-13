@@ -1,8 +1,8 @@
 const profile = {
   name: "Sharath Venkat",
   education: [
-    { school: "Binghamton University", degree: "MS in Computer Science", year: "2025", highlights: ["GPA 3.8", "Teaching Assistant for Data Structures"] },
-    { school: "Anna University", degree: "B.Tech in Information Technology", year: "2022", highlights: ["Dean’s List", "AI Research Project Lead"] }
+    { school: "Binghamton University - State University Of New York", degree: "Masters in Computer Science", year: "2024-2025"},
+    { school: "Rajalakshmi Engineering College - Anna University", degree: "B.Tech in Information Technology", year: "2020-2024"}
   ],
   experience: [
     { company: "VMWare", title: "Software Engineer Intern", dates: "Nov 2022 – Dec 2022", bullets: ["Worked on real-world projects using Java Spring Boot and REST API", "Engaged in daily code development, debugging, and iterative deployment tasks.", "Improved performance by 15%"] }
