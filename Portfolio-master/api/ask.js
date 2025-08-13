@@ -18,6 +18,7 @@ Projects: ${JSON.stringify(profile.projects)}
 Skills: ${profile.skills.join(", ")}
 Contact: ${profile.contact}
 About: ${profile.about.join(" ")}
+Hobbies: ${profile.hobbies.join(", ")}
 
 
 Formatting rules:
