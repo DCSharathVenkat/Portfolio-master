@@ -17,6 +17,8 @@ Experience: ${JSON.stringify(profile.experience)}
 Projects: ${JSON.stringify(profile.projects)}
 Skills: ${profile.skills.join(", ")}
 Contact: ${profile.contact}
+About: ${profile.about.join(" ")}
+
 
 Formatting rules:
 - Use clear plain text with line breaks and simple bullets (•), not Markdown.
