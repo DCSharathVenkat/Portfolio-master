@@ -34,7 +34,7 @@ export default function ChatWidget() {
           padding: 10px 14px; border: 1px solid #ccc; cursor: pointer;
           font-weight: 500; transition: all .25s ease;
         }
-        .ask-btn:hover { transform: scale(1.08); background: #f0f0f0; }
+        .ask-btn:hover { transform: scale(1.08); background: #f999ecff; }
         .ask-btn.pulsing { animation: pulse 1.6s ease-in-out infinite; }
       `}</style>
 
@@ -43,7 +43,7 @@ export default function ChatWidget() {
         onClick={() => setOpen((o) => !o)}
         className={`ask-btn ${open ? "" : "pulsing"}`}
       >
-        {open ? "Close" : "Ask Me"}
+        {open ? "Close" : "Ask Me About Sharath"}
       </button>
 
       {/* Chat Window */}
@@ -60,10 +60,10 @@ export default function ChatWidget() {
             flexDirection: "column",
             background: "#fff",
             borderRadius: 12,
-            boxShadow: "0 8px 24px rgba(0,0,0,.15)",
+            boxShadow: "0 8px 24px rgba(167, 74, 150, 0.15)",
             overflow: "hidden",
             zIndex: 9999,
-            border: "1px solid #e0e0e0",
+            border: "1px solid #f999ecff",
           }}
         >
           {/* Header */}
@@ -71,13 +71,13 @@ export default function ChatWidget() {
             style={{
               padding: 12,
               borderBottom: "1px solid #eee",
-              background: "#f9f9f9",
+              background: "#f5c0e9ff",
               fontWeight: 600,
               color: "#000",
               fontSize: "15px",
             }}
           >
-            Ask about my school, college or projects
+            Ask about my school, skills or projects
           </div>
 
           {/* Messages */}
@@ -87,7 +87,7 @@ export default function ChatWidget() {
               overflowY: "auto",
               padding: 12,
               fontSize: "15px",
-              background: "#fff",
+              background: "#ffffffff",
             }}
           >
             {messages.map((m, i) => (
@@ -113,7 +113,7 @@ export default function ChatWidget() {
                 </span>
               </div>
             ))}
-            {loading && <div style={{ opacity: 0.6 }}>typing…</div>}
+            {loading && <div style={{ opacity: 0.6 }}>thinking...</div>}
           </div>
 
           {/* Input */}
