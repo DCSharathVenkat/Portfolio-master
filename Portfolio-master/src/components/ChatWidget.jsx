@@ -21,23 +21,27 @@ export default function ChatWidget() {
 
   return (
     <>
+      {/* Pulse animation + hover styles */}
+      <style>{`
+        @keyframes pulse {
+          0% { transform: scale(1); box-shadow: 0 4px 8px rgba(0,0,0,0.10); }
+          50% { transform: scale(1.06); box-shadow: 0 8px 16px rgba(0,0,0,0.18); }
+          100% { transform: scale(1); box-shadow: 0 4px 8px rgba(0,0,0,0.10); }
+        }
+        .ask-btn {
+          position: fixed; bottom: 20px; right: 20px; z-index: 9999;
+          background: #fff; color: #000; border-radius: 24px;
+          padding: 10px 14px; border: 1px solid #ccc; cursor: pointer;
+          font-weight: 500; transition: all .25s ease;
+        }
+        .ask-btn:hover { transform: scale(1.08); background: #f0f0f0; }
+        .ask-btn.pulsing { animation: pulse 1.6s ease-in-out infinite; }
+      `}</style>
+
       {/* Toggle Button */}
       <button
         onClick={() => setOpen((o) => !o)}
-        style={{
-          position: "fixed",
-          bottom: 20,
-          right: 20,
-          zIndex: 9999,
-          background: "#fff",
-          color: "#000",
-          borderRadius: 24,
-          padding: "10px 14px",
-          border: "1px solid #ccc",
-          boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
-          cursor: "pointer",
-          fontWeight: "500",
-        }}
+        className={`ask-btn ${open ? "" : "pulsing"}`}
       >
         {open ? "Close" : "Ask Me"}
       </button>
@@ -51,7 +55,7 @@ export default function ChatWidget() {
             right: 20,
             width: 380,
             maxWidth: "95vw",
-            height: 550, // increased height
+            height: 550,
             display: "flex",
             flexDirection: "column",
             background: "#fff",
@@ -73,7 +77,7 @@ export default function ChatWidget() {
               fontSize: "15px",
             }}
           >
-            Ask about my school, college, or projects
+            Ask about my school, college or projects
           </div>
 
           {/* Messages */}
@@ -82,7 +86,7 @@ export default function ChatWidget() {
               flex: 1,
               overflowY: "auto",
               padding: 12,
-              fontSize: "15px", // slightly bigger text
+              fontSize: "15px",
               background: "#fff",
             }}
           >
@@ -99,9 +103,10 @@ export default function ChatWidget() {
                     display: "inline-block",
                     padding: "10px 14px",
                     borderRadius: 16,
-                    background:
-                      m.role === "user" ? "#000" : "#f2f2f2",
+                    background: m.role === "user" ? "#000" : "#f2f2f2",
                     color: m.role === "user" ? "#fff" : "#000",
+                    whiteSpace: "pre-wrap",          // <<< keeps bullets/newlines
+                    lineHeight: 1.35,
                   }}
                 >
                   {m.content}
@@ -128,7 +133,7 @@ export default function ChatWidget() {
           >
             <input
               ref={inputRef}
-              placeholder="Type your question…"
+              placeholder="Ask me about Sharath…"
               style={{
                 flex: 1,
                 padding: 12,
@@ -150,7 +155,7 @@ export default function ChatWidget() {
                 fontSize: "15px",
               }}
             >
-              Send
+              ASK
             </button>
           </form>
         </div>

@@ -7,7 +7,7 @@ export default async function handler(req) {
 
   const { question } = await req.json();
 
-  const system = `
+const system = `
 You are a helpful assistant answering as Sharath Venkat's portfolio guide.
 Only use the profile below. If something isn't in it, say you're not sure and suggest contacting Sharath.
 
@@ -17,7 +17,17 @@ Experience: ${JSON.stringify(profile.experience)}
 Projects: ${JSON.stringify(profile.projects)}
 Skills: ${profile.skills.join(", ")}
 Contact: ${profile.contact}
-Keep answers concise (2–5 sentences) unless the user asks for more detail.`;
+
+Formatting rules:
+- Use clear plain text with line breaks and simple bullets (•), not Markdown.
+- Prefer short labeled lines, e.g.,
+  • Project: AI Chatbot
+    Stack: OpenAI API, Node.js
+    Summary: Interactive assistant for FAQs
+    Role: Full-stack Developer
+    Outcome: Handled 1,000+ queries
+- Keep answers concise (2–8 lines) unless the user asks for more detail.
+`;
 
   const r = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
