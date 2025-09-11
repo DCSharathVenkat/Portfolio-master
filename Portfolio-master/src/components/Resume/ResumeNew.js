@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/SharathVenkat.D.C.pdf";
+import pdf from "../../Assets/../Assets/D.C.Sharath_Venkat-Resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -20,15 +20,16 @@ function ResumeNew() {
       <Container fluid className="resume-section">
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
+<Button
+  variant="primary"
+  href={pdf}
+  download="D.C.Sharath_Venkat-Resume.pdf"   // 👈 this forces download
+  style={{ maxWidth: "250px" }}
+>
+  <AiOutlineDownload />
+  &nbsp;Download Resume
+</Button>
+
         </Row>
 
         <Row className="resume">
@@ -38,15 +39,6 @@ function ResumeNew() {
         </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
         </Row>
       </Container>
     </div>
