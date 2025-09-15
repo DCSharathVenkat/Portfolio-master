@@ -34,7 +34,7 @@ function Home() {
               <img
                 src={homeLogo}
                 alt="home pic"
-                className="img-fluid"
+                className="img-fluid floating-img"
                 style={{ maxHeight: "450px" }}
               />
             </Col>
@@ -42,6 +42,21 @@ function Home() {
         </Container>
       </Container>
       <Home2 />
+
+      {/* Inline CSS for floating effect */}
+      <style>
+        {`
+          .floating-img {
+            animation: float 4s ease-in-out infinite;
+          }
+
+          @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+          }
+        `}
+      </style>
     </section>
   );
 }
